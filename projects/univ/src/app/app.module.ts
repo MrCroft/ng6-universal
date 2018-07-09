@@ -16,7 +16,7 @@ import { DashComponent } from './dash/dash.component';
     DashComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     AppRoutingModule,
     LayoutModule,

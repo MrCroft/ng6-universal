@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/univ",
+            "outputPath": "dist/univ/browser",
             "index": "projects/univ/src/index.html",
             "main": "projects/univ/src/main.ts",
             "polyfills": "projects/univ/src/polyfills.ts",
@@ -97,6 +97,14 @@
             "exclude": [
               "**/node_modules/**"
             ]
+          }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/univ/server",
+            "main": "projects/univ/src/main.server.ts",
+            "tsConfig": "projects/univ/tsconfig.server.json"
           }
         }
       }
