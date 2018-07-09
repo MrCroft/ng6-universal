@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:server": "ng build --prod --extract-css && ng run univ:server && cp server.ts ./dist/univ/",
+    "serve:ssr": "./node_modules/.bin/ts-node ./dist/univ/server",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
